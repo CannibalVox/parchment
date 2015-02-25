@@ -74,9 +74,7 @@ body
 /* General dialogs */
 .dialog
 {
-	background: #fff;
-	border: 3px solid #ddd;
-	border-radius: 10px;
+	border: 1px solid #fff;
 	-webkit-box-shadow: 5px 5px 10px #777;
 	box-shadow: 5px 5px 10px #777;
 	left: 30%;

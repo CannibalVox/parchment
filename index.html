@@ -1,20 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Parchment</title>
-	<script src="lib/jquery.min.js"></script>
-	<script src="lib/parchment.min.js"></script>
-	<link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="lib/parchment.min.css">
-	<meta name="viewport" content="width=device-width,user-scalable=no">
-</head>
-<body>
-	<div id="about">
-		<h1>Parchment</h1>
-		<p>is an interpreter for Interactive Fiction. <a href="http://parchment.googlecode.com">Find out more.</a></p>
-		<noscript><p>Parchment requires Javascript. Please enable it in your browser.</p></noscript>
-	</div>
-	<div id="parchment"></div>
+  <title>Anonymous - Hexxit — Play</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="author" content="Anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="interpreter/vorple.css">
+  <link rel="stylesheet" href="hexxit.css">
+
+  <script type="text/javascript" src="interpreter/vorple.parchment.min.js"></script>
+<script type="text/javascript">
+// The loading message can be changed by setting a global variable
+// vorpleLoaderMessage in a custom JavaScript file
+$( function() {
+$( '#vorpleLoader' ).html(
+typeof vorpleLoaderMessage === 'string' ? vorpleLoaderMessage : 'Connecting to Port 23...'
+);
+});
+</script>
+
+<script type="text/javascript">
+parchment.options.lib_path = 'interpreter/';
+parchment.options.default_story = [ "stories/Hexxit.zblorb"];
+parchment.options.lock_story = 1;
+
+
+vorple.media.defaults.swfPath = 'interpreter/';
+vorple.media.defaults.audioPath = '.';
+vorple.media.defaults.imagePath = '.';
+vorple.media.defaults.musicPath = '.';
+vorple.media.defaults.videoPath = '.';
+
+$( function() {
+$( '.coverimage, .links, .interpretercredit' ).detach();
+$( '#vorpleContainer' ).unwrap();
+
+vorple.core.init( parchment );
+parchment.init();
+});
+</script>
+
+ </head>
+<body class="play minimal">
+<div class="container">
+<div class="links">
+<div class="smalltitle">Hexxit</div>
+<ul>
+<li><a href="index.html">Home page</a></li>
+</ul>
+</div>
+
+<div id="gameport">
+<div id="vorpleContainer" class="retro">
+<div id="vorple"><div id="vorpleLoader"></div></div>
+<div id="vorpleInput"></div>
+<div id="parchment"></div>
+<div class="clearAll"></div>
+</div>
+</div>
+
+</div>
+<div class="interpretercredit"><a href="http://vorple-if.com">Vorple</a></div>
 </body>
 </html>
+

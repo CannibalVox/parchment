@@ -1,0 +1,173 @@
+#header_image {
+	position:fixed;
+	top:60px;
+	left:0;
+	margin:0 230px 0 250px;
+	padding:0 30px 5px 30px;
+	background-color:black;
+	max-width:500px;
+}
+
+#header_image img {
+	width:100%;
+}
+
+.ui-tooltip,.qtip{position:absolute;left:-28000px;top:-28000px;display:none;max-width:280px;min-width:50px;font-size:10.5px;line-height:12px;}.ui-tooltip-fluid{display:block;visibility:hidden;position:static!important;float:left!important;}.ui-tooltip-content{position:relative;padding:5px 9px;overflow:hidden;border:1px solid #000001;text-align:left;word-wrap:break-word;overflow:hidden;}.ui-tooltip-titlebar{position:relative;min-height:14px;padding:5px 35px 5px 10px;overflow:hidden;border:1px solid #000001;border-width:1px 1px 0;font-weight:bold;}.ui-tooltip-titlebar+.ui-tooltip-content{border-top-width:0!important;}/*!Default close button class */ .ui-tooltip-titlebar .ui-state-default{position:absolute;right:4px;top:50%;margin-top:-9px;cursor:pointer;outline:medium none;border-width:1px;border-style:solid;}* html .ui-tooltip-titlebar .ui-state-default{top:16px;}.ui-tooltip-titlebar .ui-icon,.ui-tooltip-icon .ui-icon{display:block;text-indent:-1000em;}.ui-tooltip-icon,.ui-tooltip-icon .ui-icon{-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px;}.ui-tooltip-icon .ui-icon{width:18px;height:14px;text-align:center;text-indent:0;font:normal bold 10px/13px Tahoma,sans-serif;color:inherit;background:transparent none no-repeat -100em -100em;}/*!Default tooltip style */ .ui-tooltip-default .ui-tooltip-titlebar,.ui-tooltip-default .ui-tooltip-content{border-color:#F1D031;background-color:#FFFFA3;color:#555;}.ui-tooltip-default .ui-tooltip-titlebar{background-color:#FFEF93;}.ui-tooltip-default .ui-tooltip-icon{border-color:#CCC;background:#F1F1F1;color:#777;}.ui-tooltip-default .ui-tooltip-titlebar .ui-state-hover{border-color:#AAA;color:#111;}.ui-tooltip .ui-tooltip-tip{margin:0 auto;overflow:hidden;z-index:10;}.ui-tooltip .ui-tooltip-tip,.ui-tooltip .ui-tooltip-tip *{position:absolute;line-height:.1px!important;font-size:.1px!important;color:#123456;background:transparent;border:0 dashed transparent;}.ui-tooltip .ui-tooltip-tip canvas{top:0;left:0;}#qtip-overlay{position:fixed;left:-10000em;top:-10000em;}#qtip-overlay.blurs{cursor:pointer;}#qtip-overlay div{position:absolute;left:0;top:0;width:100%;height:100%;background-color:black;opacity:.7;filter:alpha(opacity=70);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";}
+/*
+
+Parchment
+=========
+
+Built: 2014-04-07
+
+Copyright (c) 2008-2014 The Parchment Contributors
+BSD licenced
+https://github.com/curiousdannii/parchment
+
+*/
+
+html{overflow-y:scroll;-webkit-text-size-adjust:none}body{background:#FFF;color:#000;font-family:FixedsysExcelsior301Regular,fixedsys,"Courier New",courier,fixed,monospace;font-size:16px;margin:0 0 8px;text-align:center}#parchment{margin:0 auto;text-align:left}#gameport{line-height:1.4;margin:0 auto;text-align:left;width:80%}.dialog{background:#fff;border:3px solid #ddd;border-radius:10px;-webkit-box-shadow:5px 5px 10px #777;box-shadow:5px 5px 10px #777;left:30%;padding:0 20px;position:fixed;top:20%;width:40%}.load{text-align:left}.panel input{display:block;margin:0 auto;width:50%}.error{background:red;color:#fff;padding:10px;margin:10px}#parchment{white-space:pre-wrap}.TextInput{background:0 0;border:0;color:inherit;display:inline;font:inherit;outline:0;padding:0}.CharInput{left:-999em;position:absolute}.TextGrid{position:fixed;z-index:2}.box{position:absolute;z-index:1}.main,.TextGrid{padding:0 1px}tt{line-height:1}.zvm-bold{font-weight:700}.zvm-italic{font-style:italic}.zvm-mono{line-height:1}.zvm-fg-2{color:#000}.zvm-bg-2{background-color:#000}.zvm-fg-3{color:#ef0000}.zvm-bg-3{background-color:#ef0000}.zvm-fg-4{color:#00d600}.zvm-bg-4{background-color:#00d600}.zvm-fg-5{color:#efef00}.zvm-bg-5{background-color:#efef00}.zvm-fg-6{color:#006bb5}.zvm-bg-6{background-color:#006bb5}.zvm-fg-7{color:#f0f}.zvm-bg-7{background-color:#f0f}.zvm-fg-8{color:#00efef}.zvm-bg-8{background-color:#00efef}.zvm-fg-9{color:#fff}.zvm-bg-9{background-color:#fff}.zvm-fg-10{color:#b5b5b5}.zvm-bg-10{background-color:#b5b5b5}.zvm-fg-11{color:#8c8c8c}.zvm-bg-11{background-color:#8c8c8c}.zvm-fg-12{color:#5a5a5a}.zvm-bg-12{background-color:#5a5a5a}
+body {
+	padding:0 230px 0 250px;
+}
+
+
+.vorplePrompt input.hilightNoFocus {
+    outline: none;
+    border:0;
+    margin-left:0.5em;
+}
+
+
+.container {
+	background-color:transparent !important;
+	max-width:560px;
+	width:auto;
+}
+
+.container #vorple {
+	width:auto;
+}
+
+#vorpleContainer {
+	background-color:transparent;
+	margin:100px auto 15px auto;
+	max-width:560px;
+	padding:1em;
+	border:0px solid #ccf;
+	box-shadow:0px 0px 0px #000;
+	-webkit-box-shadow:0px 0px 0px #000;
+	-moz-box-shadow:0px 0px 0px #000;
+}
+
+#parchment {
+	display:none;
+	width:600px;
+	clear:both;
+}
+
+#vorple .vorplePrompt input {
+	width:80%;
+}
+
+.parserError .turnContent {
+	font-style: italic;
+	color: #007700;
+}
+
+.parserError .oldPrompt {
+/*	text-decoration: line-through; */
+	font-style: italic;
+	color:#007700;
+}
+
+#vorpleContainer.retro, #vorpleContainer.retro .turn {
+
+color:#54fe54;
+
+font-weight: normal;
+
+}
+
+#vorple input {
+font-family: inherit;
+    color: #54FE54;
+    font-weight: bold;
+    border: none;
+    background-color: transparent;
+    width: 90%;
+}
+
+/* this prevents artifacts on scroll in Chrome */
+input {
+    -webkit-transform: translate3d(0,0,0);
+}
+
+/* debugging */
+
+.debug {
+	color:#633;
+	font-style:italic;
+}
+
+.normal #vorple input {
+    color: #fff;
+}
+#vorpleContainer.normal, #vorpleContainer.normal .turn {
+
+background-color:black;
+
+color:white;
+
+font-weight: normal;
+
+}
+
+#vorpleContainer.minimal, #vorpleContainer.minimal .turn {
+
+background-color:black;
+
+color:white;
+
+font-weight: normal;
+
+}
+
+
+
+body.normal {
+	background-color:#000;
+	margin:0;
+	font-size:100%;
+	text-align:left;
+	background-attachment: fixed;
+	background-image: url(bg_real.gif)
+}
+
+body.retro {
+	background-color:#000;
+	margin:0;
+	font-size:100%;
+	text-align:left;
+	background-attachment: fixed;
+	background-image: url(bg_ascii.gif)
+}
+
+body.minimal {
+	background-color:#000;
+	margin:0;
+	font-size:100%;
+	text-align:left;
+	background-attachment: fixed;
+}
+
+.previousCommand {
+	color: inherit;
+	font-weight: bold;
+	text-transform: inherit;
+	font-size: inherit;
+	border: none;
+	background-color: transparent;
+	width: 100%;
+	margin-bottom: inherit;
+}
