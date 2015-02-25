@@ -22,15 +22,35 @@ http://code.google.com/p/parchment
 
 */
 
+@font-face {
+  font-family : 'VT323', monospace;
+  font-weight : normal;
+  font-style : normal;
+}
+
 html
 {
 	overflow-y: scroll;
 	-webkit-text-size-adjust: none;
 }
 
+* {
+  margin : 0;
+  padding : 0;
+  outline : none;
+}
+
 body
 {
-	background: #FFF;
+	background: #00ff77;
+	color: #18FF62;
+	webkit-touch-callout: none;
+   -webkit-user-select: none;
+    -khtml-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+        -o-user-select: none;
+           user-select: none;
 	color: #000;
 	font-family: 'VT323', Georgia, Palatino, serif;
 	font-size: 16px;
@@ -138,8 +158,8 @@ http://code.google.com/p/parchment
 	z-index: 1;
 }
 
-/* Main window */
-.main, .TextGrid
+/* Main window *
+/.main, .TextGrid
 {
 	/* Extra padding in case some serifs stick outside the status window */
 	padding: 0 1px;
