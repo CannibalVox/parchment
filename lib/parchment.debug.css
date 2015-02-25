@@ -23,7 +23,7 @@ http://code.google.com/p/parchment
 */
 
 @font-face {
-  font-family : 'VT323', monospace;
+  font-family : FixedsysExcelsior301Regular,fixedsys,"Courier New",courier,fixed,monospace;
   font-weight : normal;
   font-style : normal;
 }
@@ -51,7 +51,7 @@ body
        -ms-user-select: none;
         -o-user-select: none;
            user-select: none;
-	font-family: 'VT323', Georgia, Palatino, serif;
+	font-family: FixedsysExcelsior301Regular,fixedsys,"Courier New",courier,fixed,monospace;
 	font-size: 16px;
 	margin: 0 0 8px;
 	text-align: center;
@@ -167,7 +167,6 @@ http://code.google.com/p/parchment
 /* Monospace text */
 tt
 {
-	font-family: 'VT323', monospace;
 	line-height: 1;
 }
 /*
@@ -193,7 +192,7 @@ ZVM also requires that the whole VM <div> have white-space: pre-wrap.
 
 .zvm-italic { font-style: italic; }
 
-.zvm-mono { font-family: 'VT323', monospace; line-height: 1; }
+.zvm-mono { line-height: 1; }
 
 .zvm-fg-2 { color: #64C26D; }
 .zvm-bg-2 { background-color: #000000; border-style:solid; border-width:1px; border-color:#64C26D; }
