@@ -32,7 +32,7 @@ body
 {
 	background: #FFF;
 	color: #000;
-	font-family: Georgia, Palatino, serif;
+	font-family: 'VT323', Georgia, Palatino, serif;
 	font-size: 16px;
 	margin: 0 0 8px;
 	text-align: center;
@@ -148,7 +148,7 @@ http://code.google.com/p/parchment
 /* Monospace text */
 tt
 {
-	font-family: monospace;
+	font-family: 'VT323', monospace;
 	line-height: 1;
 }
 /*
@@ -174,7 +174,7 @@ ZVM also requires that the whole VM <div> have white-space: pre-wrap.
 
 .zvm-italic { font-style: italic; }
 
-.zvm-mono { font-family: monospace; line-height: 1; }
+.zvm-mono { font-family: 'VT323', monospace; line-height: 1; }
 
 .zvm-fg-2 { color: #000; }
 .zvm-bg-2 { background-color: #000; }
