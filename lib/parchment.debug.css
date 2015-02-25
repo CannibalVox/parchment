@@ -197,7 +197,7 @@ ZVM also requires that the whole VM <div> have white-space: pre-wrap.
 .zvm-mono { font-family: 'VT323', monospace; line-height: 1; }
 
 .zvm-fg-2 { color: #64C26D; }
-.zvm-bg-2 { background-color: #64C26D; }
+.zvm-bg-2 { background-color: #000000; border-style:solid; border-width:1px; border-color:#64C26D; }
 
 .zvm-fg-3 { color: #ef0000; }
 .zvm-bg-3 { background-color: #ef0000; }
