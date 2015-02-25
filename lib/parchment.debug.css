@@ -42,8 +42,8 @@ html
 
 body
 {
-	background: #0a2516;
-	color: #45D40C;
+	background: #000000;
+	color: #64C26D;
 	webkit-touch-callout: none;
    -webkit-user-select: none;
     -khtml-user-select: none;
@@ -196,8 +196,8 @@ ZVM also requires that the whole VM <div> have white-space: pre-wrap.
 
 .zvm-mono { font-family: 'VT323', monospace; line-height: 1; }
 
-.zvm-fg-2 { color: #45D40C; }
-.zvm-bg-2 { background-color: #45D40C; }
+.zvm-fg-2 { color: #64C26D; }
+.zvm-bg-2 { background-color: #64C26D; }
 
 .zvm-fg-3 { color: #ef0000; }
 .zvm-bg-3 { background-color: #ef0000; }
