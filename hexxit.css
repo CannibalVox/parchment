@@ -3,7 +3,6 @@
 	top:60px;
 	left:0;
 	margin:0 230px 0 250px;
-	height: 145px;
 	background: linear-gradient(180deg, #ff0000, #ff0000, #ffd800, #02ff00, #00fdff, #0005ff, #fd00ff, #ff0000, #ff0000);
 	background-size: 1200% 1200%;
 
@@ -14,6 +13,7 @@
 
 #header_image img {
 	width:100%;
+	display: block;
 }
 
 @-webkit-keyframes logo {
